@@ -51,6 +51,8 @@ def turtleLetter(letter,tur):
     elif letter == "H":
 	    pass
     elif letter == "I":
+	tur.pu()
+	tur.fd(5)
 	tur.speed(100)
 	tur.fd(10)
 	tur.right(90)
@@ -73,7 +75,7 @@ def turtleLetter(letter,tur):
 	    pass
     elif letter == "M":
 	    pass
-    elif letter == "N":
+    elif letter == "N": #wesend
 	    pass
     elif letter == "O":
 	    pass
