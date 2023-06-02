@@ -44,7 +44,11 @@ def turtleLetter(letter,tur):
         tur.fd(5)
         tur.pd()
         tur.fd(50)
+        tur.left(90)
+        tur.fd(30)
         tur.right(180)
+        tur.fd(30)
+        tur.right(90)
         tur.fd(50)
         tur.right(90)
         tur.fd(30)
@@ -205,7 +209,7 @@ def turtleLetter(letter,tur):
         tur.left(90)
         tur.fd(5)
     elif letter == "H":
-	      tur.setheading(0)
+        tur.setheading(0)
         tur.pu()
         tur.fd(5)
         tur.right(90)
@@ -252,7 +256,7 @@ def turtleLetter(letter,tur):
         tur.right(90)
         tur.fd(5)
     elif letter == "J":
-	      tur.setheading(0)
+        tur.setheading(0)
         tur.pu()
         tur.fd(5)
         tur.right(90)
@@ -285,7 +289,7 @@ def turtleLetter(letter,tur):
         tur.fd(5)
         tur.right(90)
     elif letter == "K":
-	      tur.setheading(0)
+        tur.setheading(0)
         tur.pu()
         tur.fd(5)
         tur.right(90)
@@ -312,7 +316,7 @@ def turtleLetter(letter,tur):
         tur.right(90)
         tur.fd(5)
     elif letter == "L":
-	      tur.setheading(0)
+        tur.setheading(0)
         tur.pu()
         tur.fd(5)
         tur.right(90)
@@ -330,7 +334,7 @@ def turtleLetter(letter,tur):
         tur.right(90)
         tur.fd(5)
     elif letter == "M":
-	      tur.setheading(0)
+        tur.setheading(0)
         tur.pu()
         tur.fd(5)
         tur.right(90)
@@ -356,7 +360,7 @@ def turtleLetter(letter,tur):
         tur.right(90)
         tur.fd(5)
     elif letter == "N": #wesend
-	      tur.setheading(0)
+        tur.setheading(0)
         tur.pu()
         tur.fd(5)
         tur.right(90)
@@ -373,6 +377,10 @@ def turtleLetter(letter,tur):
         tur.fd(55)
         tur.left(150)
         tur.fd(50)
+        tur.pu()
+        tur.fd(5)
+        tur.right(90)
+        tur.fd(5)
     elif letter == "O":
         tur.setheading(0)
         tur.pu()
@@ -531,8 +539,9 @@ if __name__ == "__main__":
     window = turtle.Screen()
     tur = turtle.Turtle()
     tur.speed(999)
-    #turtleLetter("box",tur)  
-
+    #turtleLetter("box",tur)
+    tur.pu()
+    tur.setpos(-600, 300)
     turtleLetter("A", tur)
     turtleLetter("B", tur)
     turtleLetter("C", tur)
