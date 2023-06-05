@@ -513,6 +513,8 @@ def turtleLetter(letter,tur):
         tur.forward(50)
         tur.right(90)
         tur.forward(20)
+	tur.left(90)
+	tur.fd(5)
     elif letter == "U":
         tur.setheading(0)
         tur.pu()
